@@ -33,6 +33,8 @@ module Halogen.HTML.Properties.Indexed
   , checked
   , selected
   , slot
+
+  , GlobalAttributes()
   ) where
 
 import Prelude
@@ -130,3 +132,13 @@ selected = IProp <<< P.selected
 
 slot :: forall ρ i. String -> IProp (slot :: I | ρ) i
 slot = IProp <<< P.slot
+
+type GlobalAttributes ρ =
+  ( id :: I
+  , name :: I
+  , title :: I
+  , class :: I
+  , spellcheck :: I
+  | ρ
+  )
+

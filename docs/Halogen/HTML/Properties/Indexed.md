@@ -19,6 +19,8 @@ course of constructing a refined HTML expression.
 erase :: forall ρ i. IProp ρ i -> Prop i
 ```
 
+The refined property can be erased into a normal one.
+
 #### `I`
 
 ``` purescript
@@ -187,6 +189,12 @@ selected :: forall ρ i. Boolean -> IProp (selected :: I | ρ) i
 
 ``` purescript
 slot :: forall ρ i. String -> IProp (slot :: I | ρ) i
+```
+
+#### `GlobalAttributes`
+
+``` purescript
+type GlobalAttributes ρ = (id :: I, name :: I, title :: I, class :: I, spellcheck :: I | ρ)
 ```
 
 

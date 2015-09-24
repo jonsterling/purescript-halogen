@@ -54,6 +54,7 @@ gulp.task("docs", ["clean-docs"], function() {
       "Halogen.HTML": "docs/Halogen/HTML.md",
       "Halogen.HTML.Core": "docs/Halogen/HTML/Core.md",
       "Halogen.HTML.Elements": "docs/Halogen/HTML/Elements.md",
+      "Halogen.HTML.Elements.Indexed": "docs/Halogen/HTML/Elements/Indexed.md",
       "Halogen.HTML.Events": "docs/Halogen/HTML/Events.md",
       "Halogen.HTML.Events.Forms": "docs/Halogen/HTML/Events/Forms.md",
       "Halogen.HTML.Events.Handler": "docs/Halogen/HTML/Events/Handler.md",
